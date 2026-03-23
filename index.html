@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spulni Varróház - Reszponzív Landing</title>
+    <link href="<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-purple: #8139a7;
+            --text-dark: #333333;
+            --text-light: #666666;
+            --border-color: #cccccc;
+            --bg-white: #ffffff;
+            --status-green: #4CAF50;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Alap beállítások a sima görgetéshez */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+    /* Az Instrument Sans lesz az elsődleges, ha valamiért nem töltene be, a Sans-Serif marad */
+    font-family: 'Instrument Sans', sans-serif;
+    
+    /* A többi marad: */
+    color: var(--text-dark);
+    background-color: var(--bg-white);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+        .container {
+            width: 100%;
+            max-width: 1100px; /* Az asztali szélesség korlátja */
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* --- Header --- */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 0;
+        }
+
+        .logo {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--text-dark);
+            text-decoration: none;
+            letter-spacing: -1px;
+        }
+
+        .logo span {
+            color: var(--primary-purple);
+            font-weight: 300;
+        }
+
+        .header-contact {
+            text-align: right;
+        }
+
+        .phone-box {
+            border: 1.5px solid var(--text-dark);
+            padding: 10px 20px;
+            border-radius: 50px;
+            display: inline-block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--text-dark);
+            text-decoration: none;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .phone-box:hover {
+            background-color: var(--text-dark);
+            color: white;
+        }
+
+        .address-top {
+            font-size: 13px;
+            color: var(--text-light);
+        }
+
+        /* --- Status --- */
+        .status-badge {
+            text-align: center;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin: 30px 0;
+            text-transform: uppercase;
+        }
+
+        .status-badge span::before {
+            content: "●";
+            color: var(--status-green);
+            margin-right: 8px;
+        }
+
+        /* --- Hero --- */
+        .hero {
+            text-align: center;
+            padding-bottom: 60px;
+        }
+
+        .hero h1 {
+            font-size: clamp(32px, 5vw, 56px); /* Dinamikus méret: mobilon kisebb, asztalin nagyobb */
+            line-height: 1.1;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+
+        .hero p {
+            font-style: italic;
+            color: var(--text-light);
+            font-size: 18px;
+        }
+
+        /* --- Intro Section (Nyitvatartás & Kép) --- */
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 60px;
+            align-items: center;
+            margin-bottom: 100px;
+        }
+
+        .image-placeholder {
+            border: 2px dashed var(--border-color);
+            border-radius: 30px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fcfcfc;
+        }
+
+        .intro-info {
+            text-align: left;
+        }
+
+        .intro-info h3 {
+            color: var(--primary-purple);
+            font-size: 20px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .intro-info p {
+            margin-bottom: 35px;
+            font-size: 15px;
+            color: var(--text-light);
+        }
+
+        /* --- Szolgáltatások --- */
+        .section-title {
+            font-size: 32px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-bottom: 24px;
+        }
+
+        .bottom-services {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 24px;
+            margin-bottom: 100px;
+        }
+
+        .service-card {
+            border: 2px dashed var(--border-color);
+            border-radius: 24px;
+            padding: 40px;
+            text-align: left;
+            transition: border-color 0.3s ease;
+        }
+
+        .service-card:hover {
+            border-color: var(--primary-purple);
+        }
+
+        .service-card h3 {
+            color: var(--primary-purple);
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .service-card p {
+            font-size: 14px;
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        /* --- Social --- */
+        .social-section {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .social-grid {
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+            margin-top: 40px;
+        }
+
+        .social-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            text-align: left;
+        }
+
+        .social-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 22px;
+        }
+
+        .social-text b { display: block; font-size: 16px; }
+        .social-text span { font-size: 14px; color: var(--text-light); }
+
+        /* --- Footer --- */
+        footer {
+            background-color: #1a1a1a;
+            color: #777;
+            padding: 25px 0;
+            font-size: 11px;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* --- MOBIL NÉZET (1920px-ről váltás kisebbre) --- */
+        @media (max-width: 992px) {
+            .intro-grid {
+                grid-template-columns: 1fr; /* Egymás alá kerül a kép és a szöveg */
+                gap: 30px;
+            }
+            .image-placeholder {
+                order: -1; /* Mobilon a kép legyen felül */
+            }
+            .bottom-services {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .header-contact {
+                text-align: center;
+            }
+            .services-grid, .bottom-services {
+                grid-template-columns: 1fr; /* Minden kártya teljes szélességű mobilon */
+            }
+            .social-grid {
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+            }
+            .footer-content {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <a href="#" class="logo">Spuln<span>i</span></a>
+            <div class="header-contact">
+				<a href="tel:+36209935640" class="phone-box">
+					36 20 / 993-5640
+				</a>
+				
+				<a href="https://www.google.com/maps/search/?api=1&query=Spulni+Varróház+Felsőzsolca+Kölcsey+Ferenc+17" 
+				   target="_blank" 
+				   class="address-top" 
+				   style="text-decoration: none; display: block;">
+					Felsőzsolca, Kölcsey Ferenc 17.
+				</a>
+			</div>
+        </header>
+
+       <div class="status-badge" id="business-status-container">
+    <span id="status-text">Ellenőrzés...</span>
+</div>
+
+<script>
+function updateBusinessStatus() {
+    const now = new Date();
+    const day = now.getDay(); // 0: Vasárnap, 1: Hétfő ... 5: Péntek, 6: Szombat
+    const hours = now.getHours();
+    const minutes = now.getMinutes();
+    const currentTime = hours * 60 + minutes; // Idő átszámítva percekre a könnyebb számoláshoz
+
+    const statusText = document.getElementById('status-text');
+    const container = document.getElementById('business-status-container');
+
+    // Nyitvatartási idők percekben
+    const morningOpen = 8 * 60;       // 08:00
+    const morningClose = 12 * 60;      // 12:00
+    const afternoonOpen = 14 * 60;     // 14:00
+    const afternoonClose = 17 * 60 + 30; // 17:30
+
+    let isOpen = false;
+
+    // Csak hétköznap (Hétfő=1-től Péntek=5-ig)
+    if (day >= 1 && day <= 5) {
+        if ((currentTime >= morningOpen && currentTime < morningClose) || 
+            (currentTime >= afternoonOpen && currentTime < afternoonClose)) {
+            isOpen = true;
+        }
+    }
+
+    // Megjelenítés módosítása
+    if (isOpen) {
+        statusText.innerText = "Jelenleg nyitva";
+        container.style.setProperty('--status-color', '#4CAF50'); // Zöld
+    } else {
+        statusText.innerText = "Jelenleg zárva";
+        container.style.setProperty('--status-color', '#F44336'); // Piros
+    }
+}
+
+// Futtatás azonnal
+updateBusinessStatus();
+// Percenként frissítse magát automatikusan, ha nyitva marad az oldal
+setInterval(updateBusinessStatus, 60000);
+</script>
+
+<style>
+/* Add ezt a stílust a meglévőköz, hogy a pötty színe változni tudjon */
+.status-badge {
+    --status-color: #ccc; /* Alapértelmezett szürke */
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 30px 0;
+    text-transform: uppercase;
+}
+
+.status-badge span::before {
+    content: "●";
+    color: var(--status-color);
+    margin-right: 8px;
+    transition: color 0.5s ease;
+}
+</style>
+
+        <section class="hero">
+            <h1>Ruhák újraélesztése,<br>pénztárcabarát módon.</h1>
+            <p>Stay alive, stay alive...</p>
+        </section>
+
+        <section class="intro-grid">
+            <div class="image-placeholder">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1025.3274592783184!2d20.85900980211182!3d48.10568854425782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473f5f82be935caf%3A0x6273afbb955a3f59!2sFels%C5%91zsolca%2C%20K%C3%B6lcsey%20Ferenc%20u.%2017%2C%203561!5e1!3m2!1shu!2shu!4v1773237634631!5m2!1shu!2shu" width="570" height="340" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="intro-info">
+                <h3>Nyitvatartás</h3>
+                <p>Hétfőtől péntekig:<br>08:00 - 12:00 szünet 14:00 - 17:30</p>
+                
+                <h3>Elhelyezkedés</h3>
+                <p>Felsőzsolca központjában a<br>Kölcsey Ferenc 17. szám alatt található.</p>
+                
+                <h3>Parkolás</h3>
+                <p>Az üzlet előtt kettő parkolóhely van,<br>amennyiben lehetséges, használjátok! :)</p>
+            </div>
+        </section>
+
+        <section class="container">
+    <h2 class="section-title">Szolgáltatások</h2>
+    
+    <div class="services-grid">
+        <div class="service-card">
+            <div class="card-header">
+                <div class="service-icon"></div>
+                <h3>Cipzárcsere</h3>
+            </div>
+            <p>Szakszerű és tartós cipzárcsere nadrágokban, szoknyákban, kabátokban vagy akár táskákban is.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="card-header">
+                <div class="service-icon"></div>
+                <h3>Ing és blúz módosítás</h3>
+            </div>
+            <p>Ingek karcsúsítása, ujja rövidítése és gallér javítása a tökéletes illeszkedés érdekében.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="card-header">
+                <div class="service-icon"></div>
+                <h3>Farmer és bőr javítás</h3>
+            </div>
+            <p>Vastagabb anyagok, farmerek vagy bőrkabátok speciális géppel történő javítása és stoppolása.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="card-header">
+                <div class="service-icon"></div>
+                <h3>Lakástextília készítés</h3>
+            </div>
+            <p>Háztartási kiegészítők, például függönyök és sötétítők pontos méretre szabása, szegése és javítása. Gyári/bolti textíliák átalakítása és módosítása a kívánt méretre.</p>
+        </div>
+		
+		<div class="service-card">
+            <div class="card-header">
+                <div class="service-icon"></div>
+                <h3>Ruhajavítás és alakítás</h3>
+            </div>
+            <p>Női és férfi ruhák, nadrágok, szoknyák, kosztümök, mellények és kabátok szakszerű méretre igazítása (felhajtás, szűkítés vagy bővítés)</p>
+            <br>
+			<p class="extra-text">Ne dobd ki, javítsuk meg! :)</p>
+        </div>
+
+        <div class="service-card">
+			<div class="card-header">
+			<div class="service-icon"></div>
+			<h3>Csomagpont</h3>
+			</div>
+			<p>Csomagok feladása és kiadása is nálam megoldható! Packeta és DPD futárok minden nap viszik és hozzák tőlem a csomagokat!</p>
+			<div class="logo-row">
+			<br>
+				<img src="foxpostlogo.png" class="logo-box logo-1" alt="Packeta">
+				<img src="dpdlogo.png" class="logo-box logo-2" alt="DPD">
+			</div>
+		</div>
+    </div>
+</section>
+
+        <section class="social-section">
+    <h2 class="section-title">Kövess, hogy értesülj az infókról!</h2>
+    <div class="social-grid">
+        <a href="https://www.google.com/search?q=spulni+varrohaz&oq=spul&gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIGCAEQRRg5Mg0IAhAuGK8BGMcBGIAEMgcIAxAAGIAEMgcIBBAAGIAEMgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEIMTIyMmowajeoAgCwAgA&sourceid=chrome&ie=UTF-8" class="social-item" target="_blank">
+            <img src="googlelogo.png" class="social-icon-img" alt="Google">
+            <div class="social-text">
+                <b>Spulni Varróház</b>
+                <span>Varróház Felsőzsolcán</span>
+            </div>
+        </a>
+
+        <a href="https://facebook.com/spulnivarrohaz" class="social-item" target="_blank">
+            <img src="fblogo.png" class="social-icon-img" alt="Facebook">
+            <div class="social-text">
+                <b>Spulni Varróház</b>
+                <span>facebook.com/spulnivarrohaz</span>
+            </div>
+        </a>
+    </div>
+</section>
+
+    </div>
+
+    <footer>
+        <div class="container footer-content">
+            <div>Spulni varróház</div>
+            <div>Minden jog fenntartva 2026</div>
+            <div>Készítette: Kolumbán Szabolcs</div>
+        </div>
+    </footer>
+
+</body>
+</html>
