@@ -1,491 +1,470 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="icon" type="image/svg+xml" href="favicon_spulni.svg">
-    
-    <title>Ruhajavítás olcsón és gyorsan! Spulni Varróház</title>
-    <meta name="description" content="Profi ruhajavítás, cipzárcsere, nadrág felhajtás és lakástextília készítés Felsőzsolcán. Minőségi varrodai szolgáltatások kedvező áron a Kölcsey utca 17. alatt.">
-    <meta name="keywords" content="varroda Felsőzsolca, ruhajavítás, varróház, cipzárcsere, nadrág felhajtás, szabóság Miskolc környéke, Spulni Varróház, lakástextília varrás, packeta, foxpost, csomagfeladás">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Spulni Varróház">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://spulni.hu/sharedimage_spulni.svg">
-    <meta property="og:title" content="Profi ruhajavítás - Spulni Varróház Felsőzsolcán!">
-    <meta property="og:description" content="Ruhák újraélesztése Felsőzsolcán. Ruhajavítás, cipzárcsere és csomagpont.">
-    <meta property="og:image" content="sharedimage_spulni.svg">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-purple: #8139a7;
-            --text-dark: #333333;
-            --text-light: #666666;
-            --border-color: #cccccc;
-            --bg-white: #ffffff;
-            --status-green: #4CAF50;
-        }
+<link rel="icon" type="image/svg+xml" href="favicon_spulni.svg">
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<title>Ruhajavítás olcsón és gyorsan! Spulni Varróház</title>
+<meta name="description" content="Profi ruhajavítás, cipzárcsere, nadrág felhajtás és lakástextília készítés Felsőzsolcán. Minőségi varrodai szolgáltatások kedvező áron a Kölcsey utca 17. alatt.">
+<meta name="keywords" content="varroda Felsőzsolca, ruhajavítás, varróház, cipzárcsere, nadrág felhajtás, szabóság Miskolc környéke, Spulni Varróház, lakástextília varrás, packeta, foxpost, csomagfeladás">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Spulni Varróház">
 
-        html {
-            scroll-behavior: smooth;
-        }
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://spulni.hu/sharedimage_spulni.svg">
+<meta property="og:title" content="Profi ruhajavítás - Spulni Varróház Felsőzsolcán!">
+<meta property="og:description" content="Ruhák újraélesztése Felsőzsolcán. Ruhajavítás, cipzárcsere és csomagpont.">
+<meta property="og:image" content="sharedimage_spulni.svg">
 
-        body {
-            font-family: 'Instrument Sans', sans-serif;
-            color: var(--text-dark);
-            background-color: var(--bg-white);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-      
-        /* --- Alert Banner  
-        .alert-banner {
-            display: block;
-            background-color: #F6BB00;
-            color: #1a1a1a;
-            text-align: center;
-            padding: 15px 20px;
-            font-weight: 700;
-            text-decoration: none;
-            font-size: 15px;
-            transition: background-color 0.3s ease;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<style>
+:root {
+--primary-purple: #8139a7;
+--text-dark: #333333;
+--text-light: #666666;
+--border-color: #cccccc;
+--bg-white: #ffffff;
+--status-green: #4CAF50;
+}
 
-        .alert-banner:hover {
-            background-color: #e5ae00;
-        }
-        
-        .container {
-            width: 100%;
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-        --- */
-        
-        /* --- Header --- */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 40px 0;
-        }
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
 
-        /* Logó stílusa és animációja */
-        .logo {
-            display: inline-block;
-            transition: transform 0.3s ease, filter 0.3s ease;
-            text-decoration: none;
-        }
+html {
+scroll-behavior: smooth;
+}
 
-        .logo img {
-            height: 100px;
-            width: auto;
-            display: block;
-        }
+body {
+font-family: 'Instrument Sans', sans-serif;
+color: var(--text-dark);
+background-color: var(--bg-white);
+line-height: 1.6;
+overflow-x: hidden;
+}
 
-        .logo:hover {
-            transform: translateY(-3px) scale(1.02); /* Kicsit megemelkedik és nő */
-            filter: drop-shadow(0 5px 15px rgba(129, 57, 167, 0.2)); /* Lila árnyékot kap */
-        }
+.container {
+width: 100%;
+max-width: 1100px;
+margin: 0 auto;
+padding: 0 24px;
+}
 
-        .header-contact {
-            text-align: right;
-        }
+/* --- Header --- */
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 40px 0;
+}
 
-        /* Telefonszám gomb lila hoverrel */
-        .phone-box {
-            border: 1.5px solid var(--text-dark);
-            padding: 10px 20px;
-            border-radius: 50px;
-            display: inline-block;
-            margin-bottom: 8px;
-            font-weight: 600;
-            color: var(--text-dark);
-            text-decoration: none;
-            font-size: 14px;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
+/* Logó stílusa és animációja */
+.logo {
+display: inline-block;
+transition: transform 0.3s ease, filter 0.3s ease;
+text-decoration: none;
+}
 
-        .phone-box:hover {
-            background-color: var(--primary-purple);
-            border-color: var(--primary-purple);
-            color: white;
-            transform: scale(1.05); /* Enyhe növekedés a gombnál is */
-        }
+.logo img {
+height: 100px;
+width: auto;
+display: block;
+}
 
-        .address-top {
-            font-size: 13px;
-            color: var(--text-light);
-            text-decoration: none;
-            display: block;
-            transition: color 0.3s ease;
-        }
+.logo:hover {
+transform: translateY(-3px) scale(1.02); /* Kicsit megemelkedik és nő */
+filter: drop-shadow(0 5px 15px rgba(129, 57, 167, 0.2)); /* Lila árnyékot kap */
+}
 
-        .address-top:hover {
-            color: var(--primary-purple);
-        }
+.header-contact {
+text-align: right;
+}
 
-        /* --- Status --- */
-        .status-badge {
-            --status-color: #ccc;
-            text-align: center;
-            font-size: 11px;
-            font-weight: 700;
-            letter-spacing: 2px;
-            margin: 30px 0;
-            text-transform: uppercase;
-        }
+/* Telefonszám gomb lila hoverrel */
+.phone-box {
+border: 1.5px solid var(--text-dark);
+padding: 10px 20px;
+border-radius: 50px;
+display: inline-block;
+margin-bottom: 8px;
+font-weight: 600;
+color: var(--text-dark);
+text-decoration: none;
+font-size: 14px;
+transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-        .status-badge span::before {
-            content: "●";
-            color: var(--status-color);
-            margin-right: 8px;
-            transition: color 0.5s ease;
-        }
+.phone-box:hover {
+background-color: var(--primary-purple);
+border-color: var(--primary-purple);
+color: white;
+transform: scale(1.05); /* Enyhe növekedés a gombnál is */
+}
 
-        /* --- Hero --- */
-        .hero {
-            text-align: center;
-            padding-bottom: 60px;
-        }
+.address-top {
+font-size: 13px;
+color: var(--text-light);
+text-decoration: none;
+display: block;
+transition: color 0.3s ease;
+}
 
-        .hero h1 {
-            font-size: clamp(32px, 5vw, 56px);
-            line-height: 1.1;
-            margin-bottom: 15px;
-            color: #1a1a1a;
-        }
+.address-top:hover {
+color: var(--primary-purple);
+}
 
-        .hero p {
-            font-style: italic;
-            color: var(--text-light);
-            font-size: 18px;
-        }
+/* --- Status --- */
+.status-badge {
+--status-color: #ccc;
+text-align: center;
+font-size: 11px;
+font-weight: 700;
+letter-spacing: 2px;
+margin: 30px 0;
+text-transform: uppercase;
+}
 
-        /* --- Intro Section & Responsive Map --- */
-        .intro-grid {
-            display: grid;
-            grid-template-columns: 1.2fr 0.8fr;
-            gap: 40px;
-            align-items: center;
-            margin-bottom: 80px;
-        }
+.status-badge span::before {
+content: "●";
+color: var(--status-color);
+margin-right: 8px;
+transition: color 0.5s ease;
+}
 
-        .map-container {
-            width: 100%;
-            border: 2px dashed var(--border-color);
-            border-radius: 30px;
-            overflow: hidden;
-            background-color: #fcfcfc;
-            line-height: 0;
-        }
+/* --- Hero --- */
+.hero {
+text-align: center;
+padding-bottom: 60px;
+}
 
-        .map-container iframe {
-            width: 100%;
-            height: auto;
-            aspect-ratio: 16 / 9;
-            border: 0;
-        }
+.hero h1 {
+font-size: clamp(32px, 5vw, 56px);
+line-height: 1.1;
+margin-bottom: 15px;
+color: #1a1a1a;
+}
 
-        .intro-info {
-            text-align: left;
-        }
+.hero p {
+font-style: italic;
+color: var(--text-light);
+font-size: 18px;
+}
 
-        .intro-info h3 {
-            color: var(--primary-purple);
-            font-size: 20px;
-            margin-bottom: 8px;
-            font-weight: 600;
-        }
+/* --- Intro Section & Responsive Map --- */
+.intro-grid {
+display: grid;
+grid-template-columns: 1.2fr 0.8fr;
+gap: 40px;
+align-items: center;
+margin-bottom: 80px;
+}
 
-        .intro-info p {
-            margin-bottom: 30px;
-            font-size: 15px;
-            color: var(--text-light);
-        }
+.map-container {
+width: 100%;
+border: 2px dashed var(--border-color);
+border-radius: 30px;
+overflow: hidden;
+background-color: #fcfcfc;
+line-height: 0;
+}
 
-        /* --- Szolgáltatások --- */
-        .section-title {
-            font-size: 32px;
-            margin-bottom: 50px;
-            text-align: center;
-        }
+.map-container iframe {
+width: 100%;
+height: auto;
+aspect-ratio: 16 / 9;
+border: 0;
+}
 
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 24px;
-            margin-bottom: 80px;
-        }
+.intro-info {
+text-align: left;
+}
 
-        .service-card {
-            border: 2px dashed var(--border-color);
-            border-radius: 24px;
-            padding: 30px;
-            text-align: left;
-            transition: all 0.3s ease;
-            height: 100%;
-        }
+.intro-info h3 {
+color: var(--primary-purple);
+font-size: 20px;
+margin-bottom: 8px;
+font-weight: 600;
+}
 
-        .service-card:hover {
-            border-color: var(--primary-purple);
-            transform: translateY(-5px);
-            background-color: #fefaff; /* Nagyon halvány lila háttér hovernél */
-        }
+.intro-info p {
+margin-bottom: 30px;
+font-size: 15px;
+color: var(--text-light);
+}
 
-        .service-card h3 {
-            color: var(--primary-purple);
-            font-size: 18px;
-            margin-bottom: 15px;
-        }
+/* --- Szolgáltatások --- */
+.section-title {
+font-size: 32px;
+margin-bottom: 50px;
+text-align: center;
+}
 
-        .service-card p {
-            font-size: 14px;
-            color: var(--text-light);
-        }
+.services-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 24px;
+margin-bottom: 80px;
+}
 
-        .logo-row img {
-            height: 30px;
-            margin-top: 15px;
-            margin-right: 15px;
-        }
+.service-card {
+border: 2px dashed var(--border-color);
+border-radius: 24px;
+padding: 30px;
+text-align: left;
+transition: all 0.3s ease;
+height: 100%;
+}
 
-        /* --- Social --- */
-        .social-section {
-            padding: 60px 0;
-            text-align: center;
-        }
+.service-card:hover {
+border-color: var(--primary-purple);
+transform: translateY(-5px);
+background-color: #fefaff; /* Nagyon halvány lila háttér hovernél */
+}
 
-        .social-grid {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 40px;
-            margin-top: 40px;
-        }
+.service-card h3 {
+color: var(--primary-purple);
+font-size: 18px;
+margin-bottom: 15px;
+}
 
-        .social-item {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            text-decoration: none;
-            color: inherit;
-            transition: transform 0.3s ease;
-        }
+.service-card p {
+font-size: 14px;
+color: var(--text-light);
+}
 
-        .social-item:hover {
-            transform: scale(1.05);
-        }
+.logo-row img {
+height: 30px;
+margin-top: 15px;
+margin-right: 15px;
+}
 
-        .social-icon-img {
-            width: 40px;
-            height: 40px;
-            object-fit: contain;
-        }
+/* --- Social --- */
+.social-section {
+padding: 60px 0;
+text-align: center;
+}
 
-        .social-text b { display: block; font-size: 16px; }
-        .social-text span { font-size: 14px; color: var(--text-light); }
+.social-grid {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 40px;
+margin-top: 40px;
+}
 
-        /* --- Footer --- */
-        footer {
-            background-color: #1a1a1a;
-            color: #777;
-            padding: 30px 0;
-            font-size: 11px;
-            margin-top: 60px;
-        }
+.social-item {
+display: flex;
+align-items: center;
+gap: 15px;
+text-decoration: none;
+color: inherit;
+transition: transform 0.3s ease;
+}
 
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
+.social-item:hover {
+transform: scale(1.05);
+}
 
-        /* --- MOBIL NÉZET --- */
-        @media (max-width: 992px) {
-            .intro-grid {
-                grid-template-columns: 1fr;
-            }
-            .map-container {
-                order: -1;
-            }
-        }
+.social-icon-img {
+width: 40px;
+height: 40px;
+object-fit: contain;
+}
 
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                gap: 20px;
-                text-align: center;
-            }
-            .header-contact {
-                text-align: center;
-            }
-            .social-grid {
-                flex-direction: column;
-                align-items: center;
-            }
-            .footer-content {
-                flex-direction: column;
-                text-align: center;
-            }
-        }
-    </style>
+.social-text b { display: block; font-size: 16px; }
+.social-text span { font-size: 14px; color: var(--text-light); }
+
+/* --- Footer --- */
+footer {
+background-color: #1a1a1a;
+color: #777;
+padding: 30px 0;
+font-size: 11px;
+margin-top: 60px;
+}
+
+.footer-content {
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+gap: 15px;
+}
+
+/* --- MOBIL NÉZET --- */
+@media (max-width: 992px) {
+.intro-grid {
+grid-template-columns: 1fr;
+}
+.map-container {
+order: -1;
+}
+}
+
+@media (max-width: 768px) {
+header {
+flex-direction: column;
+gap: 20px;
+text-align: center;
+}
+.header-contact {
+text-align: center;
+}
+.social-grid {
+flex-direction: column;
+align-items: center;
+}
+.footer-content {
+flex-direction: column;
+text-align: center;
+}
+}
+</style>
 </head>
 <body>
-<!--
-    <a href="https://www.facebook.com/spulnivarrohaz/?locale=hu_HU" target="_blank" class="alert-banner">
-        VARRÓHÁZI SZOLGÁLTATÁS SZÜNETEL! - NYITÁS JÚNIUS 29-én, addig csomagkiadás minden este, bővebb információ a Facebookon!
-    </a>
--->
-    
-    <div class="container">
-        <header>
-            <a href="" class="logo">
-                <img src="spulni_logo.png" alt="Spulni Varróház">
-            </a>
-            <div class="header-contact">
-                <a href="tel:+36209935640" class="phone-box">36 20 / 993-5640</a>
-                <a href="https://maps.google.com" target="_blank" class="address-top">
-                    Felsőzsolca, Kölcsey Ferenc 17.
-                </a>
-            </div>
-        </header>
 
-        <div class="status-badge" id="business-status-container">
-            <span id="status-text">Ellenőrzés...</span>
-        </div>
+<div class="container">
+<header>
+<a href="" class="logo">
+<img src="spulni_logo.png" alt="Spulni Varróház">
+</a>
+<div class="header-contact">
+<a href="tel:+36209935640" class="phone-box">36 20 / 993-5640</a>
+<a href="https://maps.google.com" target="_blank" class="address-top">
+Felsőzsolca, Kölcsey Ferenc 17.
+</a>
+</div>
+</header>
 
-        <section class="hero">
-            <h1>Ruhák újraélesztése,<br>pénztárcabarát módon.</h1>
-            <p>Stay alive, stay alive...</p>
-        </section>
+<div class="status-badge" id="business-status-container">
+<span id="status-text">Ellenőrzés...</span>
+</div>
 
-        <section class="intro-grid">
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2979.9186144050122!2d20.857334812132166!3d48.10570905325919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473f5f941b51012f%3A0xe898265698014fbe!2zU3B1bG5pIFZhcnLDs2jDoXo!5e1!3m2!1shu!2shu!4v1774603034898!5m2!1shu!2shu" loading="lazy"></iframe>
-            </div> 
-            <div class="intro-info">
-                <h3>Nyitvatartás</h3>
+<section class="hero">
+<h1>Ruhák újraélesztése,<br>pénztárcabarát módon.</h1>
+<p>Stay alive, stay alive...</p>
+</section>
+
+<section class="intro-grid">
+<div class="map-container">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2979.9186144050122!2d20.857334812132166!3d48.10570905325919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473f5f941b51012f%3A0xe898265698014fbe!2zU3B1bG5pIFZhcnLDs2jDoXo!5e1!3m2!1shu!2shu!4v1774603034898!5m2!1shu!2shu" loading="lazy"></iframe>
+</div> 
+<div class="intro-info">
+<h3>Nyitvatartás</h3>
+                <p>Hétfőtől péntekig:<br>08:00 - 12:00 | 14:00 - 17:30</p>
+                <p>Nézd meg Facebook oldalam a pontos infókért!</p>
                 <p>Hétfőtől péntekig:<br>08:00 - 12:00 | 14:00 - 17:30<br>Nézd meg Facebook oldalam ha kérdésed van!</p>
-                
-                <h3>Elhelyezkedés</h3>
-                <p>Felsőzsolca központjában a<br>Kölcsey Ferenc 17. szám alatt található.</p>
-                
-                <h3>Parkolás</h3>
-                <p>Az üzlet előtt kettő parkolóhely van,<br>amennyiben lehetséges, használjátok! :)</p>
-            </div>
-        </section>
 
-        <h2 class="section-title">Szolgáltatások</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <h3>Cipzárcsere</h3>
-                <p>Szakszerű és tartós cipzárcsere nadrágokban, szoknyákban, kabátokban vagy akár táskákban is.</p>
-            </div>
-            <div class="service-card">
-                <h3>Ing és blúz módosítás</h3>
-                <p>Ingek karcsúsítása, ujja rövidítése és gallér javítása a tökéletes illeszkedés érdekében.</p>
-            </div>
-            <div class="service-card">
-                <h3>Farmer és bőr javítás</h3>
-                <p>Vastagabb anyagok, farmerek vagy bőrkabátok speciális géppel történő javítása és stoppolása.</p>
-            </div>
-            <div class="service-card">
-                <h3>Lakástextília készítés</h3>
-                <p>Függönyök, sötétítők méretre szabása, szegése és javítása. Gyári textíliák módosítása.</p>
-            </div>
-            <div class="service-card">
-                <h3>Ruhajavítás és alakítás</h3>
-                <p>Női és férfi ruhák szakszerű méretre igazítása (felhajtás, szűkítés vagy bővítés). 
-                    <br>
-                    <br><strong>Ne dobd ki, javítsuk meg!</strong></p>
-            </div>
-            <div class="service-card">
-                <h3>Csomagpont</h3>
-                <p>Packeta és DPD futárok minden nap viszik és hozzák tőlem a csomagokat!</p>
-                <div class="logo-row">
-                    <img src="foxpostlogo.png" alt="Packeta">
-                    <img src="dpdlogo.png" alt="DPD">
-                </div>
-            </div>
-        </div>
+<h3>Elhelyezkedés</h3>
+<p>Felsőzsolca központjában a<br>Kölcsey Ferenc 17. szám alatt található.</p>
 
-        <section class="social-section">
-            <h2 class="section-title">Kövess, hogy értesülj időben a tűpontos infókról!</h2>
-            <div class="social-grid">
-                <a href="https://google.com/search?q=spulni+varrohaz" class="social-item" target="_blank">
-                    <img src="googlelogo.png" class="social-icon-img" alt="Google">
-                    <div class="social-text">
-                        <b>Spulni Varróház</b>
-                        <span>Varróház Felsőzsolcán</span>
-                    </div>
-                </a>
-                <a href="https://facebook.com/spulnivarrohaz" class="social-item" target="_blank">
-                    <img src="fblogo.png" class="social-icon-img" alt="Facebook">
-                    <div class="social-text">
-                        <b>Spulni Varróház</b>
-                        <span>facebook.com/spulnivarrohaz</span>
-                    </div>
-                </a>
-            </div>
-        </section>
-    </div>
+<h3>Parkolás</h3>
+<p>Az üzlet előtt kettő parkolóhely van,<br>amennyiben lehetséges, használjátok! :)</p>
+</div>
+</section>
 
-    <footer>
-        <div class="container footer-content">
-            <div>Spulni varróház</div>
-            <div>Minden jog fenntartva 2026</div>
-            <div>Készítette: Kolumbán Szabolcs</div>
-        </div>
-    </footer>
+<h2 class="section-title">Szolgáltatások</h2>
+<div class="services-grid">
+<div class="service-card">
+<h3>Cipzárcsere</h3>
+<p>Szakszerű és tartós cipzárcsere nadrágokban, szoknyákban, kabátokban vagy akár táskákban is.</p>
+</div>
+<div class="service-card">
+<h3>Ing és blúz módosítás</h3>
+<p>Ingek karcsúsítása, ujja rövidítése és gallér javítása a tökéletes illeszkedés érdekében.</p>
+</div>
+<div class="service-card">
+<h3>Farmer és bőr javítás</h3>
+<p>Vastagabb anyagok, farmerek vagy bőrkabátok speciális géppel történő javítása és stoppolása.</p>
+</div>
+<div class="service-card">
+<h3>Lakástextília készítés</h3>
+<p>Függönyök, sötétítők méretre szabása, szegése és javítása. Gyári textíliák módosítása.</p>
+</div>
+<div class="service-card">
+<h3>Ruhajavítás és alakítás</h3>
+<p>Női és férfi ruhák szakszerű méretre igazítása (felhajtás, szűkítés vagy bővítés). 
+<br>
+<br><strong>Ne dobd ki, javítsuk meg!</strong></p>
+</div>
+<div class="service-card">
+<h3>Csomagpont</h3>
+<p>Packeta és DPD futárok minden nap viszik és hozzák tőlem a csomagokat!</p>
+<div class="logo-row">
+<img src="foxpostlogo.png" alt="Packeta">
+<img src="dpdlogo.png" alt="DPD">
+</div>
+</div>
+</div>
 
-    <script>
-        function updateBusinessStatus() {
-            const now = new Date();
-            const day = now.getDay();
-            const hours = now.getHours();
-            const minutes = now.getMinutes();
-            const currentTime = hours * 60 + minutes;
+<section class="social-section">
+<h2 class="section-title">Kövess, hogy értesülj időben a tűpontos infókról!</h2>
+<div class="social-grid">
+<a href="https://google.com/search?q=spulni+varrohaz" class="social-item" target="_blank">
+<img src="googlelogo.png" class="social-icon-img" alt="Google">
+<div class="social-text">
+<b>Spulni Varróház</b>
+<span>Varróház Felsőzsolcán</span>
+</div>
+</a>
+<a href="https://facebook.com/spulnivarrohaz" class="social-item" target="_blank">
+<img src="fblogo.png" class="social-icon-img" alt="Facebook">
+<div class="social-text">
+<b>Spulni Varróház</b>
+<span>facebook.com/spulnivarrohaz</span>
+</div>
+</a>
+</div>
+</section>
+</div>
 
-            const statusText = document.getElementById('status-text');
-            const container = document.getElementById('business-status-container');
+<footer>
+<div class="container footer-content">
+<div>Spulni varróház</div>
+<div>Minden jog fenntartva 2026</div>
+<div>Készítette: Kolumbán Szabolcs</div>
+</div>
+</footer>
 
-            const morningOpen = 8 * 60;
-            const morningClose = 12 * 60;
-            const afternoonOpen = 14 * 60;
-            const afternoonClose = 17 * 60 + 30;
+<script>
+function updateBusinessStatus() {
+const now = new Date();
+const day = now.getDay();
+const hours = now.getHours();
+const minutes = now.getMinutes();
+const currentTime = hours * 60 + minutes;
 
-            let isOpen = false;
+const statusText = document.getElementById('status-text');
+const container = document.getElementById('business-status-container');
 
-            if (day >= 1 && day <= 5) {
-                if ((currentTime >= morningOpen && currentTime < morningClose) || 
-                    (currentTime >= afternoonOpen && currentTime < afternoonClose)) {
-                    isOpen = true;
-                }
-            }
+const morningOpen = 8 * 60;
+const morningClose = 12 * 60;
+const afternoonOpen = 14 * 60;
+const afternoonClose = 17 * 60 + 30;
 
-            if (isOpen) {
-                statusText.innerText = "Jelenleg nyitva";
-                container.style.setProperty('--status-color', '#4CAF50');
-            } else {
-                statusText.innerText = "Jelenleg zárva";
-                container.style.setProperty('--status-color', '#F44336');
-            }
-        }
-        updateBusinessStatus();
-        setInterval(updateBusinessStatus, 60000);
-    </script>
+let isOpen = false;
+
+if (day >= 1 && day <= 5) {
+if ((currentTime >= morningOpen && currentTime < morningClose) || 
+(currentTime >= afternoonOpen && currentTime < afternoonClose)) {
+isOpen = true;
+}
+}
+
+if (isOpen) {
+statusText.innerText = "Jelenleg nyitva";
+container.style.setProperty('--status-color', '#4CAF50');
+} else {
+statusText.innerText = "Jelenleg zárva";
+container.style.setProperty('--status-color', '#F44336');
+}
+}
+updateBusinessStatus();
+setInterval(updateBusinessStatus, 60000);
+</script>
 </body>
 </html>
